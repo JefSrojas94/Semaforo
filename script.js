@@ -2,7 +2,6 @@ const lucesDeCirculo = document.querySelectorAll('.luces-circulo');
 let contadorLuces = 0;
 
 const mostrarLuz = () =>{
-    console.log("inicio");
     lucesDeCirculo[contadorLuces].className = 'luces-circulo';
     contadorLuces++;
     if (contadorLuces > 2) contadorLuces=0;
