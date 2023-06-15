@@ -1,7 +1,8 @@
 const lucesDeCirculo = document.querySelectorAll('.luces-circulo');
-let contadorLuces =0;
+let contadorLuces = 0;
 
-const mostrarLuz =() =>{
+const mostrarLuz = () =>{
+    console.log("inicio");
     lucesDeCirculo[contadorLuces].className = 'luces-circulo';
     contadorLuces++;
     if (contadorLuces > 2) contadorLuces=0;
@@ -9,4 +10,4 @@ const mostrarLuz =() =>{
     const luzActual=lucesDeCirculo[contadorLuces];
     luzActual.classList.add(luzActual.getAttribute('color'))
 }
-setInterval(mostrarLuz,1000)
+setInterval(mostrarLuz,1000);
